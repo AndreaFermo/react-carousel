@@ -60,7 +60,6 @@ const App = () => {
   }, [autoplay, images]);
 
   const handleKeyDown = (event) => {
-    console.log(event);
     if (event.code === "ArrowLeft") {
       handlePrevClick();
     } else if (event.code === "ArrowRight") {
