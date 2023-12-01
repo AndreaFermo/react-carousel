@@ -60,11 +60,12 @@ const App = () => {
   }, [autoplay, images]);
 
   const handleKeyDown = (event) => {
-    if (event.key === "ArrowLeft") {
+    console.log(event);
+    if (event.code === "ArrowLeft") {
       handlePrevClick();
-    } else if (event.key === "ArrowRight") {
+    } else if (event.code === "ArrowRight") {
       handleNextClick();
-    } else if (event.key === "Space") {
+    } else if (event.code === "Space") {
       handleAutoplayToggle();
     }
   };
